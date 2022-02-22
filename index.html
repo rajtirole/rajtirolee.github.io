@@ -324,6 +324,577 @@
   </div>
   <div class="footer2"> Copyright &copy; 2020, All Rights Reserved</div>
  </footer>
+  <style>
+  
+    .flex{
+    display: flex;
+}
+.items-centre{
+    align-items: center;
+}
+.justify-between{
+    justify-content:space-between;
+}
+.btn{
+padding: 0.8em 2rem;
+font-size: 1rem;
+font-weight: 600;
+border: 2px solid transparent;
+outline: none;
+border-radius: 4px;
+cursor: pointer;
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+    transition: all .3s ease ;
+}
+.btn-primary{
+    background: var(--primary);
+    color: var(--dark);
+    text-transform: uppercase;
+}
+.pic img{
+    width: 400px;
+}
+.btn-second{
+    background: transparent;
+    color: var(--primary);
+    border-color:var(--primary);
+}
+.btn-second:hover{
+    background-color: var(--primary);
+    color: var(--dark);
+    border: none;
+}
+.flex2{
+    flex: 1;
+}
+.justify-centre{
+    justify-content:center;
+}
+
+   :root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --third:#898989;
+    --light:#F2F2F2;
+    --darkk:#070606;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+    ;
+}
+header{
+    background-color: var(--dark);
+    height: 100vh;
+}
+header nav .left a:hover{
+color: var(--primary);
+}
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease ;
+
+}
+header nav{
+    padding: 2rem 0;
+}
+header nav .branding{
+    margin-right: 3rem;
+}
+/* .pic .right{
+    color:var(--pure);
+    font-weight: 130;
+}
+
+.pic .right h1{
+    font-size: 4rem;
+    font-weight: 130;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+
+}
+.pic .right h1 span{
+    color: var(--primary);
+    font-weight: 100;
+
+
+.pic .right p{
+    line-height: 1.9rem;
+    margin-bottom: 2rem;
+} */
+.pic .right h6{
+    font-size: 2rem;
+    color: var(--pure);
+    font-weight: 180;
+    margin-bottom: 0.5rem;
+}
+.pic .right #name{
+    color: var(--primary);
+    font-size: 1rem;
+}
+.pic .right #designer{
+    color: var(--primary);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 180;
+    
+    font-size: 2rem;
+}
+#paragraph{
+    color: var(--pure);
+    margin-bottom: 2rem;
+    
+}
+.pic .left{
+    size: 10vh;
+}
+header{
+    clip-path: polygon(0 0,100% 0,100% 100%, 80% 90%,0 100%);
+}
+.pic .right{
+    margin: -7rem;
+}
+/* .pic{
+    padding: 3rem 0;
+} */
+.section{
+    padding: 6rem 0;
+
+
+}
+.aboutimg{
+    height: 450px;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    border: 10px;
+
+}
+.about .container1 #manimg{
+    border-radius: 5%;
+}
+.rightcontainer{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+#about{
+    color: var(--primary);
+}
+#aboutt{
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: var(--third);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+#abouttt{
+    font-size: 1.6rem;
+    font-weight: 400;
+    
+}
+#abouth{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.social{
+    display:flex;
+    margin-top: 2rem;
+    margin-left: 30%;
+    display: flex;
+   
+}
+.social a{
+    background-color:var(--pure);
+    align-items: center;
+    justify-items: center;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all 0.3s ease;
+}
+.social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+.social a img:hover{
+    background-color: var(--primary);
+    color:var(--light);
+    border-radius: 50%;
+}
+.aboutm{
+    font-size: medium;
+    font-weight: 400;
+}
+.about .container1{
+    border: goldenrod darkblue solid;
+}
+.section-heading{
+    color: var(--darkk);
+    text-align:center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+    padding-top: 1rem;
+
+}
+.section-heading + p{
+    color: var(--third);
+    font-family:sans-serif 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 5rem;
+    text-align:center;
+
+}
+.section-heading span{
+    color: var(--primary);
+}
+.service .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3rem;
+    grid-row-gap: 6rem;
+    padding-bottom: 2rem;
+}
+section.service{
+    background:var(--light)
+    
+}
+.service .card-wrapper .card{
+    background:var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align:center;
+    transition: all.3s ease;
+}
+.service .card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.service .card-wrapper .card h2{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+.service .card-wrapper .card p{
+    font-family:sans-serif;
+    color: var(--third);
+    line-height: 1.6;
+}
+.service .card-wrapper .card:hover{
+    background: var(--dark);
+}
+.service .card-wrapper .card:hover h2,.service .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+section .freelance{
+    text-align:center;
+    /* background-color:rgba(0, 0, 0,0.5);  */
+    background: var(--third);
+    height: 23rem;
+    clip-path: polygon(0 0,100% 0,100% 97%, 75% 80%,0 97%);
+    padding-top: 3.5rem;
+    color: var(--pure);
+
+    background-image: url(..\images-for-portfolio\images\coding1.jpg);
+    background: linear-gradient(rgba(0,0,0,0,0.7)),url(..\images-for-portfolio\images\coding1.jpg);
+
+}
+section .freelance p{
+    padding-top: 1rem;
+    background-image: url(..\images-for-portfolio\images\coding1.jpg);
+    padding-bottom: 1rem;
+}
+section .freelance h1{
+    font-weight: 500;
+    line-height: 1.2;
+}
+section.reviews .slider .slide img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+section.reviews .slider .slide{
+    text-align:center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10rem;
+
+}
+section.reviews.slider .slide p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--third);
+    margin-bottom: 1rem;
+}
+section.reviews .slider .slide span{
+    font-size: 0.8rem;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section.reviews .slider-dots .dots{
+    list-style-type:none;
+    display: flex!important;
+    justify-content: center;
+}
+section.reviews .slider-dots{
+    margin-top: 2.5rem;
+}
+section.reviews .slider-dots button{
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--third);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 3rem;
+}
+section.reviews .dots li.slick-active button{
+    background: var(--primary);
+    width: 25px;
+    
+}
+section.project{
+    background: var(--light);
+    padding-top: 5rem;
+}
+section.project .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    /* padding-top: 5rem; */
+}
+section.project .card-wrapper .card{
+    position: relative;
+    height: 250px;
+
+}
+section.project .card-wrapper .card .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    color: var(--third) ;
+    background: rgba(61, 207, 211, 0.9);
+    opacity: 0;
+    transition: all 0.3s ease;
+
+}
+section.project .card-wrapper .card .overlay a{
+    color:var(--dark);
+    text-decoration: none;
+}
+section.project .card-wrapper .card  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+section.project .card-wrapper .card:hover .overlay{
+    opacity: 1;
+}
+section.blog{
+    background: var(--dark);
+    clip-path: polygon(0 0,100% 0,100% 100%,75% 90%,0 100%);
+    padding-bottom: 8rem;
+}
+section.blog .section-heading{
+    color: var(--pure);
+}
+section.blog .container{
+    padding-top: 2rem;
+    
+}
+section.blog .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+
+}
+section.blog .card-wrapper .card{
+    background: var(--pure);
+}
+section.blog .card-wrapper .card .card-content{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+section.blog .card-wrapper .card .card-content h1{
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+section.blog .card-wrapper .card .card-content a{
+color: var(--darkk);
+text-decoration: none;
+}
+section.blog .card-wrapper .card .card-content a:hover{
+    color: var(--primary);
+}
+section.blog .card-wrapper .card .card-content span{
+    color:var(--third);
+}
+section.blog .card-wrapper .card .card-content p{
+    font-family: serif;
+    color: var(--third);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+section.blog .card-wrapper .card .card-content a.read-more{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+
+}
+section.contact .card-wrapper .card{
+    text-align:center;
+    padding-bottom: 3rem;
+}
+section.contact .card-wrapper .card img{
+    margin-bottom: 3rem;
+
+}
+section.contact .card-wrapper .card h1{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--third);
+    font-weight: 400;
+}
+section.contact .card-wrapper .card h6 a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--third);
+    font-weight: 400;
+}
+section.contact .card-wrapper .card h6 a:hover{
+    color: var(--dark);
+}
+
+header .container .right a{
+    transition: all 0.3s ease;
+}
+section.contact .input-wrap{
+    display: grid;
+    font-family: sans-serif;
+    grid-template-columns: repeat(2 1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+}
+section.contact .input-wrap-2{
+    display:flex;
+    flex-direction: column;
+}
+section.contact input{
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border:  1px solid var(--light);
+    font-size: 0.8rem;
+}
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+    font-family: sans-serif;
+    border:  1px solid var(--light);
+    font-size: 0.8rem;
+}
+section.contact .input-wrap-2 input:focus{
+    outline: none;
+}
+section.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    border:  1px solid var(--light);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+section.contact .input-wrap-2 textarea:focus{
+    outline: none;
+}
+.section.contact input:focus{
+    outline: none;
+}
+section.contact .input-wrap:focus{
+    outline: none;
+}
+section.contact .btn-wrapper{
+    text-align:center;
+    margin-top: 2rem;
+}
+footer{
+    background: var(--dark);
+    text-align:center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+footer .social-footer{
+    /* align-items:center; */
+    /* justify-content: center; */
+    padding-top: 1rem;
+     /* padding-left: 3rem;  */
+    padding-bottom: 1rem;
+    display: flex;
+    align-items:center;
+    margin-left: 0%;
+    justify-content: center;
+}
+footer .footer-logo{
+    margin-bottom: 3rem;
+}
+footer .footer-social a{
+    margin-right: 1rem;
+}
+footer .footer2{
+    color: var(--light);
+}
+  
+  
+  </style>
 
 
   
